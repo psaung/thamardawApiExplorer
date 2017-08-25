@@ -1,0 +1,74 @@
+{
+  "name": "Drug",
+  "plural": "Drugs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "drugId": {
+      "type": "number"
+    },
+    "brandName": {
+      "type": "string",
+      "required": true
+    },
+    "genericName": {
+      "type": "string"
+    },
+    "atcCode": {
+      "type": "string"
+    },
+    "fdaDrcNo": {
+      "type": "string"
+    },
+    "form": {
+      "type": "string"
+    },
+    "strength": {
+      "type": "string"
+    },
+    "uses": {
+      "type": "string"
+    },
+    "cautionPrecaution": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "netWeightInGram": {
+      "type": "number"
+    },
+    "countryOfOrigin": {
+      "type": "object"
+    },
+    "manufacturer": {
+      "type": "object"
+    },
+    "distributor": {
+      "type": "object"
+    },
+    "sellerClassification": {
+      "type": "object"
+    },
+    "fdaCategories": {
+      "type": [
+        "object"
+      ]
+    },
+    "sideEffects": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

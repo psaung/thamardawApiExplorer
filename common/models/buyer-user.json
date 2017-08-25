@@ -1,0 +1,26 @@
+{
+  "name": "BuyerUser",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "lastTimeUseApp": {
+      "type": "date"
+    },
+    "lastTimeOrder": {
+      "type": "date"
+    },
+    "tmd_note": {
+      "type": "string"
+    },
+    "address": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

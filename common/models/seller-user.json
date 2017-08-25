@@ -1,0 +1,20 @@
+{
+  "name": "SellerUser",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "totalActiveDrug": {
+      "type": "number"
+    },
+    "lastTimeMakeSale": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

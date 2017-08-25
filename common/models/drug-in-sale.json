@@ -1,0 +1,45 @@
+{
+  "name": "DrugInSale",
+  "plural": "DrugInSales",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "drugInSaleId": {
+      "type": "string"
+    },
+    "drugId": {
+      "type": "string"
+    },
+    "basePrice": {
+      "type": "number"
+    },
+    "packaging": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "sellerUser": {
+      "type": "object"
+    },
+    "listingPriority": {
+      "type": "object"
+    },
+    "paymentTerms": {
+      "type": "object"
+    },
+    "discountForDrug": {
+      "type": "object"
+    },
+    "bonusForDrug": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

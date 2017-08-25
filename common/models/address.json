@@ -1,0 +1,45 @@
+{
+  "name": "Address",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "room": {
+      "type": "string"
+    },
+    "story": {
+      "type": "string"
+    },
+    "buildingNumber": {
+      "type": "string",
+      "default": "s"
+    },
+    "street": {
+      "type": "string"
+    },
+    "wardNo": {
+      "type": "string"
+    },
+    "township": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "buildingName": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

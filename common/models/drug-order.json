@@ -1,0 +1,60 @@
+{
+  "name": "DrugOrder",
+  "plural": "DrugOrders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "drugOrderId": {
+      "type": "string"
+    },
+    "orderDateTime": {
+      "type": "date"
+    },
+    "orderTotalAmount": {
+      "type": "number"
+    },
+    "timeToBeProcessed": {
+      "type": "number"
+    },
+    "timeToBeDelivered": {
+      "type": "number"
+    },
+    "timeToBeCashCollected": {
+      "type": "string"
+    },
+    "currentState": {
+      "type": "string"
+    },
+    "noteForOrder": {
+      "type": "string"
+    },
+    "packageSize": {
+      "type": "string"
+    },
+    "buyerUser": {
+      "type": "object"
+    },
+    "cashCollectingEntries": {
+      "type": [
+        "object"
+      ]
+    },
+    "orderStateEntries": {
+      "type": [
+        "object"
+      ]
+    },
+    "orderItems": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
