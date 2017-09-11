@@ -35,6 +35,9 @@
     "cautionPrecaution": {
       "type": "string"
     },
+    "contraindication": {
+      "type": "string"
+    },
     "imageUrl": {
       "type": "string"
     },

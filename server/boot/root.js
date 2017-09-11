@@ -5,4 +5,8 @@ module.exports = function(server) {
   var router = server.loopback.Router();
   router.get('/', server.loopback.status());
   server.use(router);
+
+  router.get('/dataEntry', function(req, res) {
+    res.sendfile('client/index.html');
+  });
 };
