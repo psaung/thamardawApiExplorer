@@ -11,6 +11,9 @@
     },
     "lastTimeMakeSale": {
       "type": "date"
+    },
+    "address" : {
+      "type" : "object"
     }
   },
   "validations": [],

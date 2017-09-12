@@ -13,8 +13,7 @@
       "type": "string"
     },
     "buildingNumber": {
-      "type": "string",
-      "default": "s"
+      "type": "string"
     },
     "street": {
       "type": "string"
