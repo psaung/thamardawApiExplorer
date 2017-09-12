@@ -10,8 +10,8 @@
     "drugInSaleId": {
       "type": "string"
     },
-    "drugId": {
-      "type": "string"
+    "drug": {
+      "type": "object"
     },
     "basePrice": {
       "type": "number"

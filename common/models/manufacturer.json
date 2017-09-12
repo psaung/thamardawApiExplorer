@@ -1,0 +1,22 @@
+{
+  "name": "Manufacturer",
+  "plural": "Manufacturers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "manufacturer": {
+      "type": "string",
+      "required": true
+    },
+    "tmdNote": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

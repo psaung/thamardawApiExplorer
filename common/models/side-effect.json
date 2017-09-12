@@ -1,0 +1,21 @@
+{
+  "name": "SideEffect",
+  "plural": "SideEffects",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "sideEffect": {
+      "type": "string"
+    },
+    "tmdNote": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

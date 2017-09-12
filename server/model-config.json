@@ -58,5 +58,45 @@
   "Address": {
     "dataSource": "db",
     "public": true
+  },
+  "CountryOfOrigin": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Distributor": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Manufacturer": {
+    "dataSource": "db",
+    "public": true
+  },
+  "SellerClassification": {
+    "dataSource": "db",
+    "public": true
+  },
+  "FdaCategory": {
+    "dataSource": "db",
+    "public": true
+  },
+  "SideEffect": {
+    "dataSource": "db",
+    "public": true
+  },
+  "BonusForDrug": {
+    "dataSource": "db",
+    "public": true
+  },
+  "DiscountForDrug": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ListingPriority": {
+    "dataSource": "db",
+    "public": true
+  },
+  "PaymentTerm": {
+    "dataSource": "db",
+    "public": true
   }
 }

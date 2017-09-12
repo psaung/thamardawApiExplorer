@@ -1,0 +1,22 @@
+{
+  "name": "SellerClassification",
+  "plural": "SellerClassifications",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "classification": {
+      "type": "string",
+      "required": true
+    },
+    "tmdNote": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

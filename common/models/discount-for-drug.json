@@ -1,0 +1,25 @@
+{
+  "name": "DiscountForDrug",
+  "plural": "DiscountForDrugs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "discountPercentage": {
+      "type": "number",
+      "required": true
+    },
+    "minimumQuantity": {
+      "type": "number"
+    },
+    "otherTerms": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

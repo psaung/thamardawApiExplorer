@@ -1,0 +1,25 @@
+{
+  "name": "BonusForDrug",
+  "plural": "BonusForDrugs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bonusDescription": {
+      "type": "string",
+      "required": true
+    },
+    "minimumQuantity": {
+      "type": "number"
+    },
+    "otherTerms": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
