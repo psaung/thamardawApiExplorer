@@ -1,6 +1,7 @@
 {
   "name": "Address",
-  "base": "Model",
+  "plural": "Addresses",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true

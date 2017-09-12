@@ -1,19 +1,21 @@
 {
   "name": "SellerUser",
-  "base": "Model",
+  "plural": "SellerUsers",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "totalActiveDrug": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "lastTimeMakeSale": {
       "type": "date"
     },
-    "address" : {
-      "type" : "object"
+    "address": {
+      "type": "object"
     }
   },
   "validations": [],

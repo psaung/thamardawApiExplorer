@@ -49,11 +49,7 @@
   },
   "BuyerUser": {
     "dataSource": "db",
-    "public": false
-  },
-  "SellerUser": {
-    "dataSource": "db",
-    "public": false
+    "public": true
   },
   "Address": {
     "dataSource": "db",
@@ -96,6 +92,10 @@
     "public": true
   },
   "PaymentTerm": {
+    "dataSource": "db",
+    "public": true
+  },
+  "SellerUser": {
     "dataSource": "db",
     "public": true
   }
