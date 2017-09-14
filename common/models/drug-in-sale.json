@@ -28,7 +28,7 @@
     "listingPriority": {
       "type": "object"
     },
-    "paymentTerms": {
+    "paymentTerm": {
       "type": "object"
     },
     "discountForDrug": {

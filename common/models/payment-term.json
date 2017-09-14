@@ -7,7 +7,10 @@
     "validateUpsert": true
   },
   "properties": {
-    "paymentTerms": {
+    "paymentTerm": {
+      "type": "string"
+    },
+    "otherTerm": {
       "type": "string"
     },
     "description": {
