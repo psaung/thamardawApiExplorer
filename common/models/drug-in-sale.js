@@ -13,7 +13,7 @@ module.exports = function(Druginsale) {
   Druginsale.disableRemoteMethodByName('count', true)
   Druginsale.disableRemoteMethodByName('replaceById', true)
   Druginsale.disableRemoteMethodByName('createChangeStream', true)
-  Druginsale.disableRemoteMethodByName("updateAll", true);
+  // Druginsale.disableRemoteMethodByName("updateAll", true);
   Druginsale.disableRemoteMethodByName("replaceOrCreate", false);
   Druginsale.disableRemoteMethodByName('replaceById', true);
   Druginsale.disableRemoteMethodByName('upsertWithWhere', true);

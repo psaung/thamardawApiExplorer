@@ -12,7 +12,7 @@ module.exports = function(Drugorder) {
   Drugorder.disableRemoteMethodByName('count', true)
   Drugorder.disableRemoteMethodByName('replaceById', true)
   Drugorder.disableRemoteMethodByName('createChangeStream', true)
-  Drugorder.disableRemoteMethodByName("updateAll", true);
+  // Drugorder.disableRemoteMethodByName("updateAll", true);
   Drugorder.disableRemoteMethodByName("replaceOrCreate", false);
   Drugorder.disableRemoteMethodByName('replaceById', true);
   Drugorder.disableRemoteMethodByName('upsertWithWhere', true);
@@ -29,7 +29,7 @@ module.exports = function(Drugorder) {
     }
   );
 
-  Drugorder.getMyOrders = function(id, cb) {
+  Drugorder.getMyOrders = function(ctx, cb) {
     Drugorder.find({
       where: { 'buyerUser.buyerUserId': ctx.id }
     }, function (err, instance) {
