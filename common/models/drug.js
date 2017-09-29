@@ -24,11 +24,11 @@ module.exports = function(Drug) {
       {
         http    : { path: '/getDrugs', verb: 'post'},
         accepts : { arg: 'query', type: 'string' },
-        returns : { arg: "Drugs", trpe: 'array' }
+        returns : { arg: "Drugs", type: 'array' }
       }
   );
 
-  Drug.getDrugs = function(query, cb) {
+  Drug.getDrugs = function(ctx, cb) {
     Drug.find({}, function (err, instance) {
         var response = instance;
         cb(null, response);

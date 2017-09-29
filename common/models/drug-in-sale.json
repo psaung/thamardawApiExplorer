@@ -48,5 +48,7 @@
       "permission": "DENY"
     }
   ],
-  "methods": {}
+  "methods": {
+
+  }
 }
