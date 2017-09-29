@@ -21,7 +21,7 @@ app.start = function() {
 app.remotes().phases
 .addBefore('invoke', '**')
   .use(function(ctx, next) {
-    if (!ctx.req.accessToken.id) return next();
+    if (!ctx.req.accessToken) return next();
     const User = app.models.User;
     User.findById(ctx.req.accessToken.userId, function(err, user) {
       if (err) return next(err);

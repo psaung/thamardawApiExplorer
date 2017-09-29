@@ -50,7 +50,6 @@ module.exports = function(Druginsale) {
     Druginsale.find({
       where: { 'sellerUser.sellerUserId': ctx.id }
     }, function (err, instance) {
-      console.log(instance)
         var response = instance;
         cb(null, response);
     });

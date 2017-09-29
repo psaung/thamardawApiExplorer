@@ -666,69 +666,66 @@
   },
   {
     "drugInSaleId": "12",
-    "drug": {
-      "drugId": 3,
-      "brandName": "Amlong 5",
-      "genericName": "Amlodipine",
-      "atcCode": "C08CA01",
-      "fdaDrcNo": "1234567890",
-      "form": "Tablet",
-      "strength": "5 mg",
-      "uses": "Amlong 5 MG Tablet is used to treat high blood pressure and other heart complications. The medicine should be taken in conjunction with a proper diet and regular exercise. It is also used in managing the chest pain.",
-      "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
-      "contraindication": "Allergy",
-      "imageUrl": "http://tmd-dev.thamardaw.com/TMD000018_77c508c403df9e42aa6d794ef2f39d9dd8f45d30.jpg.jpg",
-      "description": "Anti-hypertensive",
-      "netWeightInGram": 5,
-      "countryOfOrigin": {
-        "countryOfOriginId": 101,
-        "countryOfOrigin": "India",
-        "tmdNote": ""
-      },
-      "manufacturer": {
-        "manufacturerId": 201,
-        "manufacturer": "Micro Carsyon",
-        "tmdNote": ""
-      },
-      "distributor": {
-        "distributorId": 301,
-        "distributor": "Acichem Labs",
-        "tmdNote": ""
-      },
-      "sellerClassification": {
-        "sellerClassificationId": 401,
-        "classification": "",
-        "tmdNote": ""
-      },
-      "fdaCategories": [
-        {
-          "categoryId": 501,
-          "category": "Antihypertensive"
-        }
-      ],
-      "sideEffects": [
-        {
-          "sideEffectId": 601,
-          "sideEffect": "Swelling of ankles or feet"
+    "drug":   {
+        "drugId": 3,
+        "brandName": "Albendol 400",
+        "genericName": "Albendazole",
+        "atcCode": "",
+        "fdaDrcNo": "1234567890",
+        "form": "Tablet",
+        "strength": "400mg",
+        "uses": "Albendol Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms: Neurocysticercosis - Hydatid disease",
+        "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+        "contraindication": "Hypersensitivity to Albendol Tablet is a contraindication",
+        "imageUrl": "http://tmd-dev.thamardaw.com/TMD000036_c486cee9204148a2dce6e9ea68e5193c3614813a.jpg.jpg",
+        "description": "Gastr,ointastinal",
+        "netWeightInGram": 300,
+        "countryOfOrigin": {
+          "countryOfOriginId": 101,
+          "countryOfOrigin": "India",
+          "tmdNote": ""
         },
-        {
-          "sideEffectId": 602,
-          "sideEffect": "Difficulty in breathing"
+        "manufacturer": {
+          "manufacturerId": 202,
+          "manufacturer": "Micro Labs",
+          "tmdNote": ""
         },
-        {
-          "sideEffectId": 603,
-          "sideEffect": "Dizziness"
+        "distributor": {
+          "distributorId": 301,
+          "distributor": "Acichem Labs",
+          "tmdNote": ""
         },
-        {
-          "sideEffectId": 604,
-          "sideEffect": "Increased heartbeat"
+        "sellerClassification": {
+          "sellerClassificationId": 401,
+          "classification": "abc",
+          "tmdNote": ""
         },
-        {
-          "sideEffectId": 605,
-          "sideEffect": "Muscle pain"
-        }
-      ]
-    },
+        "fdaCategories": [
+          {
+            "categoryId": 502,
+            "category": "Gastrointastinal"
+          }
+        ],
+        "sideEffects": [
+          {
+            "sideEffectId": 614,
+            "sideEffect": "Nausea"
+          },
+          {
+            "sideEffectId": 615,
+            "sideEffect": "Vomiting"
+          },
+          {
+            "sideEffectId": 617,
+            "sideEffect": "Abdominal pain"
+          },
+          {
+            "sideEffectId": 618,
+            "sideEffect": "Fever"
+          }
+        ],
+        "id": "59cdfb0fce0ddc6c70db421e"
+      },
     "basePrice": 850,
     "packaging": "10x10's",
     "isActive": true,

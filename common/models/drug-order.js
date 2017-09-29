@@ -20,21 +20,21 @@ module.exports = function(Drugorder) {
 
   //------------------------------------------------------------------------ SELLER -----------------------------------------------------------------
 
-
   Drugorder.remoteMethod (
     'getMyOrders',
     {
       http  : { path: '/getMyOrders', verb: 'post'},
-      accepts : { arg: 'id', type: 'string', http: { source: 'query' } },
-      returns : { arg: 'responseData', type: 'string'}
+      accepts : { arg: "currentUser", type: 'object' },
+      returns : { arg: 'myOrders', type: 'string'}
     }
   );
 
   Drugorder.getMyOrders = function(id, cb) {
-
-    Drugorder.find({}, function (err, instance) {
-      var response = instance;
-      cb(null, response);
+    Drugorder.find({
+      where: { 'buyerUser.buyerUserId': ctx.id }
+    }, function (err, instance) {
+        var response = instance;
+        cb(null, response);
     });
   }
 
