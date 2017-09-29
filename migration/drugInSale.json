@@ -1,0 +1,764 @@
+[
+  {
+    "drugInSaleId": "136",
+    "drug": {
+      "drugId": 8,
+      "brandName": "Amnotac 150",
+      "genericName": "Ranitidine",
+      "atcCode": "",
+      "fdaDrcNo": "1234567890",
+      "form": "Tablet",
+      "strength": "150mg",
+      "uses": "Ranitidine Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms:\n- Benign duodenal ulcer\n- Gastric ulcer\n- Inflammation of the esophagus\n- Acid peptic disease",
+      "cautionPrecaution": "Do not take this medication if you are allergic to it. Pregnant or planning to get pregnant",
+      "contraindication": "Hypersensitivity to Ranitidine Tablet is a contraindication. In addition, Ranitidine Tablet should not be used if you have the following conditions:\nBreastfeeding\nHypersensitivity\nPorphyria",
+      "imageUrl": "http://tmd-dev.thamardaw.com/TMD000042_5518c34e234d36bf2511605816f021f29e065540.jpg.jpg",
+      "description": "Gastrointastinal",
+      "netWeightInGram": 150,
+      "countryOfOrigin": {
+        "countryOfOriginId": 101,
+        "countryOfOrigin": "India",
+        "tmdNote": ""
+      },
+      "manufacturer": {
+        "manufacturerId": 204,
+        "manufacturer": "Jackson Labs",
+        "tmdNote": ""
+      },
+      "distributor": {
+        "distributorId": 301,
+        "distributor": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "sellerClassification": {
+        "sellerClassificationId": 401,
+        "classification": "",
+        "tmdNote": ""
+      },
+      "fdaCategories": [
+        {
+          "categoryId": 506,
+          "category": "Gastrointestinal"
+        }
+      ],
+      "sideEffects": [
+        {
+          "sideEffectId": 619,
+          "sideEffect": "Swelling of lips"
+        },
+        {
+          "sideEffectId": 610,
+          "sideEffect": "Diarrhea"
+        },
+        {
+          "sideEffectId": 620,
+          "sideEffect": "Headache"
+        },
+        {
+          "sideEffectId": 629,
+          "sideEffect": "Very Low Blood Pressure"
+        },
+        {
+          "sideEffectId": 630,
+          "sideEffect": "Chest pain"
+        },
+        {
+          "sideEffectId": 616,
+          "sideEffect": "Diarrhea"
+        }
+      ]
+    },
+    "basePrice": 600,
+    "packaging": "10x6's",
+    "isActive": true,
+    "sellerUser": {
+      "sellerUserId": 143
+    },
+    "listingPriority": {
+      "listingPriorityId": 1,
+      "value": 2,
+      "description": "Package B"
+    },
+    "discountForDrug": {
+      "discountForDrugId": 124,
+      "discountPercentage": 3,
+      "minimumQuantity": 10,
+      "otherTerms": "NA"
+    },
+    "bonusForDrug": {
+      "bonusForDrugId": 124,
+      "bonusDescription": "You can get plus two everytime you purchase 20 drugs.",
+      "minimumQuantity": 10,
+      "bonusQuantity": 1,
+      "otherTerms": "NA"
+    },
+    "id": "59cdfc48ce0ddc6c70db4224",
+    "expireIn": "In 3 months",
+    "paymentTerms": {
+      "paymentTermId": 0,
+      "paymentTerm": "NET30",
+      "description": "You can pay the order within 30 days after your order."
+    }
+  },
+  {
+    "drugInSaleId": "135",
+    "drug": {
+      "drugId": 7,
+      "brandName": "Oramol",
+      "genericName": "Paracetamol",
+      "atcCode": "",
+      "fdaDrcNo": "1234567890",
+      "form": "Tablet",
+      "strength": "500mg",
+      "uses": "Oramol Paracetamol Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms: \n- Fever\n- Periods pain\n- Headache\n- Cold\n- Toothache\n- Joint pain\n- Ear pain",
+      "cautionPrecaution": "Avoid using it if allergic to paracetamol.Do not take paracetamol if you consume alcoholic beverages every day",
+      "contraindication": "Hypersensitivity to Paracetamol Tablet is a contraindication. In addition, Paracetamol Tablet should not be used if you have the following conditions:\nHepatic impairment\nHypersensitivity ",
+      "imageUrl": "http://tmd-dev.thamardaw.com/TMD000041_807ec29fa6e9355be468bd5fd211712809e1acef.jpg.jpg",
+      "description": "Non steroidal anti inflammatory drugs",
+      "netWeightInGram": 500,
+      "countryOfOrigin": {
+        "countryOfOriginId": 101,
+        "countryOfOrigin": "India",
+        "tmdNote": ""
+      },
+      "manufacturer": {
+        "manufacturerId": 203,
+        "manufacturer": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "distributor": {
+        "distributorId": 301,
+        "distributor": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "sellerClassification": {
+        "sellerClassificationId": 401,
+        "classification": "",
+        "tmdNote": ""
+      },
+      "fdaCategories": [
+        {
+          "categoryId": 505,
+          "category": "Fever Reducer"
+        }
+      ],
+      "sideEffects": [
+        {
+          "sideEffectId": 623,
+          "sideEffect": "Feeling of sickness"
+        },
+        {
+          "sideEffectId": 624,
+          "sideEffect": "Skin reddening"
+        },
+        {
+          "sideEffectId": 625,
+          "sideEffect": "Allergic reactions"
+        },
+        {
+          "sideEffectId": 626,
+          "sideEffect": "Shortness of breath"
+        },
+        {
+          "sideEffectId": 627,
+          "sideEffect": "Swollen facial features"
+        },
+        {
+          "sideEffectId": 628,
+          "sideEffect": "Liver damage"
+        }
+      ]
+    },
+    "basePrice": 1000,
+    "packaging": "10x6's",
+    "isActive": false,
+    "sellerUser": {
+      "sellerUserId": 142
+    },
+    "listingPriority": {
+      "listingPriorityId": 4,
+      "value": 5,
+      "description": "Package E"
+    },
+    "discountForDrug": {
+      "discountForDrugId": 123,
+      "discountPercentage": 2,
+      "minimumQuantity": 10,
+      "otherTerms": "NA"
+    },
+    "bonusForDrug": {
+      "bonusForDrugId": 125,
+      "bonusDescription": "Buy 10 Get 1 Free.",
+      "minimumQuantity": 10,
+      "bonusQuantity": 2,
+      "otherTerms": "NA"
+    },
+    "id": "59cdfc6dce0ddc6c70db4225",
+    "expireIn": "In 3 months",
+    "paymentTerms": {
+      "paymentTermId": 1,
+      "paymentTerm": "NET60",
+      "description": "You can pay the order within 60 days after your order."
+    }
+  },
+  {
+    "drugInSaleId": "133",
+    "drug": {
+      "drugId": 6,
+      "brandName": "Ciprolox-250",
+      "genericName": "Ciprofloxacin",
+      "atcCode": "",
+      "fdaDrcNo": "1234567890",
+      "form": "Tablet",
+      "strength": "250mg",
+      "uses": "Ciprofloxacin Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms:\nTreatment of bacterial infections",
+      "cautionPrecaution": "Do not use more than prescribed dose. Taking more medication will not improve your symptoms; rather they may cause poisoning or serious side-effects. If you suspect that you or anyone else who may have overdosed of Ciprofloxacin Tablet, please go to the emergency department of the closest hospital or nursing home. Bring a medicine box, container, or label with you to help doctors with necessary information.",
+      "contraindication": "Hypersensitivity to Ciprofloxacin Tablet is a contraindication. In addition, Ciprofloxacin Tablet should not be used if you have the following conditions:\n- Hypersensitivity\n- Muscle disorder\n- Tizanidine ",
+      "imageUrl": "http://tmd-dev.thamardaw.com/TMD000040_d06f80ad9224a5476e9f1515507dbe0725f98efb.jpg.jpg",
+      "description": "Antibiotic",
+      "netWeightInGram": 250,
+      "countryOfOrigin": {
+        "countryOfOriginId": 101,
+        "countryOfOrigin": "India",
+        "tmdNote": ""
+      },
+      "manufacturer": {
+        "manufacturerId": 203,
+        "manufacturer": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "distributor": {
+        "distributorId": 301,
+        "distributor": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "sellerClassification": {
+        "sellerClassificationId": 401,
+        "classification": "",
+        "tmdNote": ""
+      },
+      "fdaCategories": [
+        {
+          "categoryId": 504,
+          "category": "Antibiotic"
+        }
+      ],
+      "sideEffects": [
+        {
+          "sideEffectId": 620,
+          "sideEffect": "Headache"
+        },
+        {
+          "sideEffectId": 603,
+          "sideEffect": "Dizziness"
+        },
+        {
+          "sideEffectId": 621,
+          "sideEffect": "Fainting"
+        },
+        {
+          "sideEffectId": 622,
+          "sideEffect": "Fast or pounding heartbeat"
+        }
+      ]
+    },
+    "basePrice": 850,
+    "packaging": "10x10's",
+    "isActive": false,
+    "sellerUser": {
+      "sellerUserId": 141
+    },
+    "listingPriority": {
+      "listingPriorityId": 4,
+      "value": 5,
+      "description": "Package E"
+    },
+    "discountForDrug": {
+      "discountForDrugId": 123,
+      "discountPercentage": 4,
+      "minimumQuantity": 10,
+      "otherTerms": "NA"
+    },
+    "bonusForDrug": {
+      "bonusForDrugId": 127,
+      "bonusDescription": "10 units are free if you purchase 30 units.Offer vary time to time and company to company.",
+      "minimumQuantity": 30,
+      "bonusQuantity": 2,
+      "otherTerms": "NA"
+    },
+    "id": "59cdfc85ce0ddc6c70db4226",
+    "expireIn": "In 3 months",
+    "paymentTerms": {
+      "paymentTermId": 1,
+      "paymentTerm": "NET60",
+      "description": "You can pay the order within 60 days after your order."
+    }
+  },
+  {
+    "drugInSaleId": "131",
+    "drug": {
+      "drugId": 5,
+      "brandName": "R-LOC 150",
+      "genericName": "Ranitidine",
+      "atcCode": "",
+      "fdaDrcNo": "1234567890",
+      "form": "Tablet",
+      "strength": "150mg",
+      "uses": "R Loc Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms: \n- Benign duodenal ulcer \n- Gastric ulcer \n- Inflammation of the esophagus \n- Acid peptic disease",
+      "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+      "contraindication": "Hypersensitivity to R Loc Tablet is a contraindication. In addition, R Loc Tablet should not be used if you have the following conditions:\n- Breastfeeding\n- Hypersensitivity\n- Porphyria",
+      "imageUrl": "http://tmd-dev.thamardaw.com/TMD000038_c3dc295a2a95a1f7995203e03c90e67fc135dcf4.jpg.jpg",
+      "description": "Anti-ulcerants, Anti-emetics & anti-spasmodic",
+      "netWeightInGram": 150,
+      "countryOfOrigin": {
+        "countryOfOriginId": 101,
+        "countryOfOrigin": "India",
+        "tmdNote": ""
+      },
+      "manufacturer": {
+        "manufacturerId": 201,
+        "manufacturer": "Micro Carsyon",
+        "tmdNote": ""
+      },
+      "distributor": {
+        "distributorId": 301,
+        "distributor": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "sellerClassification": {
+        "sellerClassificationId": 401,
+        "classification": "",
+        "tmdNote": ""
+      },
+      "fdaCategories": [
+        {
+          "categoryId": 503,
+          "category": "misc"
+        }
+      ],
+      "sideEffects": [
+        {
+          "sideEffectId": 616,
+          "sideEffect": "Diarrhea"
+        },
+        {
+          "sideEffectId": 619,
+          "sideEffect": "Swelling of lips"
+        },
+        {
+          "sideEffectId": 620,
+          "sideEffect": "Headache"
+        }
+      ]
+    },
+    "basePrice": 100,
+    "packaging": "10x10's",
+    "isActive": true,
+    "sellerUser": {
+      "sellerUserId": 139
+    },
+    "listingPriority": {
+      "listingPriorityId": 4,
+      "value": 5,
+      "description": "Package E"
+    },
+    "discountForDrug": {
+      "discountForDrugId": 127,
+      "discountPercentage": 2,
+      "minimumQuantity": 5,
+      "otherTerms": "NA"
+    },
+    "bonusForDrug": {
+      "bonusForDrugId": 127,
+      "bonusDescription": "10 units are free if you purchase 30 units.Offer vary time to time and company to company.",
+      "minimumQuantity": 30,
+      "bonusQuantity": 1,
+      "otherTerms": "NA"
+    },
+    "id": "59cdfc98ce0ddc6c70db4227",
+    "expireIn": "In 12 months",
+    "paymentTerms": {
+      "paymentTermId": 1,
+      "paymentTerm": "NET60",
+      "description": "You can pay the order within 60 days after your order."
+    }
+  },
+  {
+    "drugInSaleId": "129",
+    "drug": {
+      "drugId": 4,
+      "brandName": "Histac 150",
+      "genericName": "Ranitidine",
+      "atcCode": "",
+      "fdaDrcNo": "1234567890",
+      "form": "Tablet",
+      "strength": "150mg",
+      "uses": "Histac Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms: - Acid peptic disease - Gastric ulcer - Benign duodenal ulcer - Inflammation of the esophagus",
+      "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+      "contraindication": "Alcohol addiction, Allergic reactions, Use of mineral oil based laxatives ",
+      "imageUrl": "http://tmd-dev.thamardaw.com/TMD000037_a19613db6532d00055ab23a94c88c63df205a792.jpg.jpg",
+      "description": "Gastrointastinal \nAl(OH)3 300mg \nMg(OH)2 150mg \nSimethicone BP 40mg",
+      "netWeightInGram": 150,
+      "countryOfOrigin": {
+        "countryOfOriginId": 101,
+        "countryOfOrigin": "India",
+        "tmdNote": ""
+      },
+      "manufacturer": {
+        "manufacturerId": 201,
+        "manufacturer": "Micro Carsyon",
+        "tmdNote": ""
+      },
+      "distributor": {
+        "distributorId": 301,
+        "distributor": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "sellerClassification": {
+        "sellerClassificationId": 401,
+        "classification": "",
+        "tmdNote": ""
+      },
+      "fdaCategories": [
+        {
+          "categoryId": 502,
+          "category": "Gastrointastinal"
+        }
+      ],
+      "sideEffects": [
+        {
+          "sideEffectId": 613,
+          "sideEffect": "Muscle weakness"
+        },
+        {
+          "sideEffectId": 616,
+          "sideEffect": "Diarrhea"
+        },
+        {
+          "sideEffectId": 619,
+          "sideEffect": "Swelling of lips"
+        }
+      ]
+    },
+    "basePrice": 700,
+    "packaging": "10x10's",
+    "isActive": false,
+    "sellerUser": {
+      "sellerUserId": 138
+    },
+    "listingPriority": {
+      "listingPriorityId": 3,
+      "value": 4,
+      "description": "Package D"
+    },
+    "discountForDrug": {
+      "discountForDrugId": 126,
+      "discountPercentage": 5,
+      "minimumQuantity": 20,
+      "otherTerms": "NA"
+    },
+    "bonusForDrug": {
+      "bonusForDrugId": 125,
+      "bonusDescription": "Buy 10 Get 1 Free.",
+      "minimumQuantity": 10,
+      "bonusQuantity": 3,
+      "otherTerms": "NA"
+    },
+    "id": "59cdfca1ce0ddc6c70db4228",
+    "expireIn": "In 12 months",
+    "paymentTerms": {
+      "paymentTermId": 1,
+      "paymentTerm": "NET60",
+      "description": "You can pay the order within 60 days after your order."
+    }
+  },
+  {
+    "drugInSaleId": "127",
+    "drug": {
+      "drugId": 3,
+      "brandName": "Albendol 400",
+      "genericName": "Albendazole",
+      "atcCode": "",
+      "fdaDrcNo": "1234567890",
+      "form": "Tablet",
+      "strength": "400mg",
+      "uses": "Albendol Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms: Neurocysticercosis - Hydatid disease",
+      "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+      "contraindication": "Hypersensitivity to Albendol Tablet is a contraindication",
+      "imageUrl": "http://tmd-dev.thamardaw.com/TMD000036_c486cee9204148a2dce6e9ea68e5193c3614813a.jpg.jpg",
+      "description": "Gastr,ointastinal",
+      "netWeightInGram": 300,
+      "countryOfOrigin": {
+        "countryOfOriginId": 101,
+        "countryOfOrigin": "India",
+        "tmdNote": ""
+      },
+      "manufacturer": {
+        "manufacturerId": 202,
+        "manufacturer": "Micro Labs",
+        "tmdNote": ""
+      },
+      "distributor": {
+        "distributorId": 301,
+        "distributor": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "sellerClassification": {
+        "sellerClassificationId": 401,
+        "classification": "abc",
+        "tmdNote": ""
+      },
+      "fdaCategories": [
+        {
+          "categoryId": 502,
+          "category": "Gastrointastinal"
+        }
+      ],
+      "sideEffects": [
+        {
+          "sideEffectId": 614,
+          "sideEffect": "Nausea"
+        },
+        {
+          "sideEffectId": 615,
+          "sideEffect": "Vomiting"
+        },
+        {
+          "sideEffectId": 617,
+          "sideEffect": "Abdominal pain"
+        },
+        {
+          "sideEffectId": 618,
+          "sideEffect": "Fever"
+        }
+      ]
+    },
+    "basePrice": 500,
+    "packaging": "10x10's",
+    "isActive": false,
+    "sellerUser": {
+      "sellerUserId": 137
+    },
+    "listingPriority": {
+      "listingPriorityId": 2,
+      "value": 3,
+      "description": "Package C"
+    },
+    "discountForDrug": {
+      "discountForDrugId": 124,
+      "discountPercentage": 3,
+      "minimumQuantity": 10,
+      "otherTerms": "NA"
+    },
+    "bonusForDrug": {
+      "bonusForDrugId": 124,
+      "bonusDescription": "You can get plus two everytime you purchase 20 drugs.",
+      "minimumQuantity": 10,
+      "bonusQuantity": 2,
+      "otherTerms": "NA"
+    },
+    "id": "59cdfcadce0ddc6c70db4229",
+    "expireIn": "In 12 months",
+    "paymentTerms": {
+      "paymentTermId": 2,
+      "paymentTerm": "COD",
+      "description": "You will have to pay for the order when the delivery comes."
+    }
+  },
+  {
+    "drugInSaleId": "125",
+    "drug": {
+      "drugId": 2,
+      "brandName": "Siloxogene",
+      "genericName": "Siloxogene",
+      "atcCode": "",
+      "fdaDrcNo": "1234567890",
+      "form": "Tablet",
+      "strength": "300mg",
+      "uses": "Siloxogene Tablet is a medicine that is used for the treatment of Stomach acid, Painful pressure, Hiccups, Swelling in the abdomen, Increases water in the intestines, Stomach upset and other conditions.",
+      "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+      "contraindication": "Alcohol addiction, Allergic reactions, Use of mineral oil based laxatives ",
+      "imageUrl": "http://tmd-dev.thamardaw.com/TMD000019_87d9d3655cc361330f6f6813985304d091f41ba3.jpg.jpg",
+      "description": "Gastrointastinal - Al(OH)3 300mg - Mg(OH)2 150mg - Simethicone BP 40mg",
+      "netWeightInGram": 300,
+      "countryOfOrigin": {
+        "countryOfOriginId": 101,
+        "countryOfOrigin": "India",
+        "tmdNote": ""
+      },
+      "manufacturer": {
+        "manufacturerId": 201,
+        "manufacturer": "Micro Carsyon",
+        "tmdNote": ""
+      },
+      "distributor": {
+        "distributorId": 301,
+        "distributor": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "sellerClassification": {
+        "sellerClassificationId": 401,
+        "classification": "abc",
+        "tmdNote": ""
+      },
+      "fdaCategories": [
+        {
+          "categoryId": 502,
+          "category": "Gastrointastinal"
+        }
+      ],
+      "sideEffects": [
+        {
+          "sideEffectId": 611,
+          "sideEffect": "Constipation"
+        },
+        {
+          "sideEffectId": 612,
+          "sideEffect": "Loss of appetite"
+        },
+        {
+          "sideEffectId": 613,
+          "sideEffect": "Muscle weakness"
+        },
+        {
+          "sideEffectId": 614,
+          "sideEffect": "Nausea"
+        },
+        {
+          "sideEffectId": 615,
+          "sideEffect": "Vomiting"
+        },
+        {
+          "sideEffectId": 616,
+          "sideEffect": "Diarrhea"
+        }
+      ]
+    },
+    "basePrice": 1000,
+    "packaging": "10x10's",
+    "isActive": true,
+    "sellerUser": {
+      "sellerUserId": 136
+    },
+    "listingPriority": {
+      "listingPriorityId": 1,
+      "value": 2,
+      "description": "Package B"
+    },
+    "discountForDrug": {
+      "discountForDrugId": 125,
+      "discountPercentage": 10,
+      "minimumQuantity": 20,
+      "otherTerms": "NA"
+    },
+    "bonusForDrug": {
+      "bonusForDrugId": 125,
+      "bonusDescription": "You can get extra 5 everytime you purchase.",
+      "minimumQuantity": 5,
+      "bonusQuantity": 2,
+      "otherTerms": "NA"
+    },
+    "id": "59cdfcb9ce0ddc6c70db422a",
+    "expireIn": "In 6 months",
+    "paymentTerms": {
+      "paymentTermId": 1
+    }
+  },
+  {
+    "drugInSaleId": "12",
+    "drug": {
+      "drugId": 3,
+      "brandName": "Amlong 5",
+      "genericName": "Amlodipine",
+      "atcCode": "C08CA01",
+      "fdaDrcNo": "1234567890",
+      "form": "Tablet",
+      "strength": "5 mg",
+      "uses": "Amlong 5 MG Tablet is used to treat high blood pressure and other heart complications. The medicine should be taken in conjunction with a proper diet and regular exercise. It is also used in managing the chest pain.",
+      "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+      "contraindication": "Allergy",
+      "imageUrl": "http://tmd-dev.thamardaw.com/TMD000018_77c508c403df9e42aa6d794ef2f39d9dd8f45d30.jpg.jpg",
+      "description": "Anti-hypertensive",
+      "netWeightInGram": 5,
+      "countryOfOrigin": {
+        "countryOfOriginId": 101,
+        "countryOfOrigin": "India",
+        "tmdNote": ""
+      },
+      "manufacturer": {
+        "manufacturerId": 201,
+        "manufacturer": "Micro Carsyon",
+        "tmdNote": ""
+      },
+      "distributor": {
+        "distributorId": 301,
+        "distributor": "Acichem Labs",
+        "tmdNote": ""
+      },
+      "sellerClassification": {
+        "sellerClassificationId": 401,
+        "classification": "",
+        "tmdNote": ""
+      },
+      "fdaCategories": [
+        {
+          "categoryId": 501,
+          "category": "Antihypertensive"
+        }
+      ],
+      "sideEffects": [
+        {
+          "sideEffectId": 601,
+          "sideEffect": "Swelling of ankles or feet"
+        },
+        {
+          "sideEffectId": 602,
+          "sideEffect": "Difficulty in breathing"
+        },
+        {
+          "sideEffectId": 603,
+          "sideEffect": "Dizziness"
+        },
+        {
+          "sideEffectId": 604,
+          "sideEffect": "Increased heartbeat"
+        },
+        {
+          "sideEffectId": 605,
+          "sideEffect": "Muscle pain"
+        }
+      ]
+    },
+    "basePrice": 850,
+    "packaging": "10x10's",
+    "isActive": true,
+    "sellerUser": {
+      "sellerUserId": 135
+    },
+    "listingPriority": {
+      "listingPriorityId": 0,
+      "value": 1,
+      "description": "Package A"
+    },
+    "discountForDrug": {
+      "discountForDrugId": 123,
+      "discountPercentage": 2,
+      "minimumQuantity": 10,
+      "otherTerms": "NA"
+    },
+    "bonusForDrug": {
+      "bonusForDrugId": 123,
+      "bonusDescription": "You can get plus one everytime you purchase 10 drugs.",
+      "minimumQuantity": 10,
+      "bonusQuantity": 1,
+      "otherTerms": "NA"
+    },
+    "id": "59cdfcddce0ddc6c70db422b",
+    "expireIn": "In 6 months",
+    "paymentTerms": {
+      "paymentTermId": 2,
+      "paymentTerm": "COD",
+      "description": "You will have to pay for the order when the delivery comes."
+    }
+  }
+]

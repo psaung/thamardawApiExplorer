@@ -1,0 +1,438 @@
+[
+  {
+    "drugId": 2,
+    "brandName": "Siloxogene",
+    "genericName": "Siloxogene",
+    "atcCode": "",
+    "fdaDrcNo": "1234567890",
+    "form": "Tablet",
+    "strength": "300mg",
+    "uses": "Siloxogene Tablet is a medicine that is used for the treatment of Stomach acid, Painful pressure, Hiccups, Swelling in the abdomen, Increases water in the intestines, Stomach upset and other conditions.",
+    "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+    "contraindication": "Alcohol addiction, Allergic reactions, Use of mineral oil based laxatives ",
+    "imageUrl": "http://tmd-dev.thamardaw.com/TMD000019_87d9d3655cc361330f6f6813985304d091f41ba3.jpg.jpg",
+    "description": "Gastrointastinal - Al(OH)3 300mg - Mg(OH)2 150mg - Simethicone BP 40mg",
+    "netWeightInGram": 300,
+    "countryOfOrigin": {
+      "countryOfOriginId": 101,
+      "countryOfOrigin": "India",
+      "tmdNote": ""
+    },
+    "manufacturer": {
+      "manufacturerId": 201,
+      "manufacturer": "Micro Carsyon",
+      "tmdNote": ""
+    },
+    "distributor": {
+      "distributorId": 301,
+      "distributor": "Acichem Labs",
+      "tmdNote": ""
+    },
+    "sellerClassification": {
+      "sellerClassificationId": 401,
+      "classification": "abc",
+      "tmdNote": ""
+    },
+    "fdaCategories": [
+      {
+        "categoryId": 502,
+        "category": "Gastrointastinal"
+      }
+    ],
+    "sideEffects": [
+      {
+        "sideEffectId": 611,
+        "sideEffect": "Constipation"
+      },
+      {
+        "sideEffectId": 612,
+        "sideEffect": "Loss of appetite"
+      },
+      {
+        "sideEffectId": 613,
+        "sideEffect": "Muscle weakness"
+      },
+      {
+        "sideEffectId": 614,
+        "sideEffect": "Nausea"
+      },
+      {
+        "sideEffectId": 615,
+        "sideEffect": "Vomiting"
+      },
+      {
+        "sideEffectId": 616,
+        "sideEffect": "Diarrhea"
+      }
+    ],
+    "id": "59cdfaf5ce0ddc6c70db421d"
+  },
+  {
+    "drugId": 3,
+    "brandName": "Albendol 400",
+    "genericName": "Albendazole",
+    "atcCode": "",
+    "fdaDrcNo": "1234567890",
+    "form": "Tablet",
+    "strength": "400mg",
+    "uses": "Albendol Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms: Neurocysticercosis - Hydatid disease",
+    "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+    "contraindication": "Hypersensitivity to Albendol Tablet is a contraindication",
+    "imageUrl": "http://tmd-dev.thamardaw.com/TMD000036_c486cee9204148a2dce6e9ea68e5193c3614813a.jpg.jpg",
+    "description": "Gastr,ointastinal",
+    "netWeightInGram": 300,
+    "countryOfOrigin": {
+      "countryOfOriginId": 101,
+      "countryOfOrigin": "India",
+      "tmdNote": ""
+    },
+    "manufacturer": {
+      "manufacturerId": 202,
+      "manufacturer": "Micro Labs",
+      "tmdNote": ""
+    },
+    "distributor": {
+      "distributorId": 301,
+      "distributor": "Acichem Labs",
+      "tmdNote": ""
+    },
+    "sellerClassification": {
+      "sellerClassificationId": 401,
+      "classification": "abc",
+      "tmdNote": ""
+    },
+    "fdaCategories": [
+      {
+        "categoryId": 502,
+        "category": "Gastrointastinal"
+      }
+    ],
+    "sideEffects": [
+      {
+        "sideEffectId": 614,
+        "sideEffect": "Nausea"
+      },
+      {
+        "sideEffectId": 615,
+        "sideEffect": "Vomiting"
+      },
+      {
+        "sideEffectId": 617,
+        "sideEffect": "Abdominal pain"
+      },
+      {
+        "sideEffectId": 618,
+        "sideEffect": "Fever"
+      }
+    ],
+    "id": "59cdfb0fce0ddc6c70db421e"
+  },
+  {
+    "drugId": 4,
+    "brandName": "Histac 150",
+    "genericName": "Ranitidine",
+    "atcCode": "",
+    "fdaDrcNo": "1234567890",
+    "form": "Tablet",
+    "strength": "150mg",
+    "uses": "Histac Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms: - Acid peptic disease - Gastric ulcer - Benign duodenal ulcer - Inflammation of the esophagus",
+    "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+    "contraindication": "Alcohol addiction, Allergic reactions, Use of mineral oil based laxatives ",
+    "imageUrl": "http://tmd-dev.thamardaw.com/TMD000037_a19613db6532d00055ab23a94c88c63df205a792.jpg.jpg",
+    "description": "Gastrointastinal \nAl(OH)3 300mg \nMg(OH)2 150mg \nSimethicone BP 40mg",
+    "netWeightInGram": 150,
+    "countryOfOrigin": {
+      "countryOfOriginId": 101,
+      "countryOfOrigin": "India",
+      "tmdNote": ""
+    },
+    "manufacturer": {
+      "manufacturerId": 201,
+      "manufacturer": "Micro Carsyon",
+      "tmdNote": ""
+    },
+    "distributor": {
+      "distributorId": 301,
+      "distributor": "Acichem Labs",
+      "tmdNote": ""
+    },
+    "sellerClassification": {
+      "sellerClassificationId": 401,
+      "classification": "",
+      "tmdNote": ""
+    },
+    "fdaCategories": [
+      {
+        "categoryId": 502,
+        "category": "Gastrointastinal"
+      }
+    ],
+    "sideEffects": [
+      {
+        "sideEffectId": 613,
+        "sideEffect": "Muscle weakness"
+      },
+      {
+        "sideEffectId": 616,
+        "sideEffect": "Diarrhea"
+      },
+      {
+        "sideEffectId": 619,
+        "sideEffect": "Swelling of lips"
+      }
+    ],
+    "id": "59cdfb23ce0ddc6c70db421f"
+  },
+  {
+    "drugId": 5,
+    "brandName": "R-LOC 150",
+    "genericName": "Ranitidine",
+    "atcCode": "",
+    "fdaDrcNo": "1234567890",
+    "form": "Tablet",
+    "strength": "150mg",
+    "uses": "R Loc Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms: \n- Benign duodenal ulcer \n- Gastric ulcer \n- Inflammation of the esophagus \n- Acid peptic disease",
+    "cautionPrecaution": "This medicine is recommended only if clearly needed and no other safer alternative is available.",
+    "contraindication": "Hypersensitivity to R Loc Tablet is a contraindication. In addition, R Loc Tablet should not be used if you have the following conditions:\n- Breastfeeding\n- Hypersensitivity\n- Porphyria",
+    "imageUrl": "http://tmd-dev.thamardaw.com/TMD000038_c3dc295a2a95a1f7995203e03c90e67fc135dcf4.jpg.jpg",
+    "description": "Anti-ulcerants, Anti-emetics & anti-spasmodic",
+    "netWeightInGram": 150,
+    "countryOfOrigin": {
+      "countryOfOriginId": 101,
+      "countryOfOrigin": "India",
+      "tmdNote": ""
+    },
+    "manufacturer": {
+      "manufacturerId": 201,
+      "manufacturer": "Micro Carsyon",
+      "tmdNote": ""
+    },
+    "distributor": {
+      "distributorId": 301,
+      "distributor": "Acichem Labs",
+      "tmdNote": ""
+    },
+    "sellerClassification": {
+      "sellerClassificationId": 401,
+      "classification": "",
+      "tmdNote": ""
+    },
+    "fdaCategories": [
+      {
+        "categoryId": 503,
+        "category": "misc"
+      }
+    ],
+    "sideEffects": [
+      {
+        "sideEffectId": 616,
+        "sideEffect": "Diarrhea"
+      },
+      {
+        "sideEffectId": 619,
+        "sideEffect": "Swelling of lips"
+      },
+      {
+        "sideEffectId": 620,
+        "sideEffect": "Headache"
+      }
+    ],
+    "id": "59cdfb33ce0ddc6c70db4220"
+  },
+  {
+    "drugId": 6,
+    "brandName": "Ciprolox-250",
+    "genericName": "Ciprofloxacin",
+    "atcCode": "",
+    "fdaDrcNo": "1234567890",
+    "form": "Tablet",
+    "strength": "250mg",
+    "uses": "Ciprofloxacin Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms:\nTreatment of bacterial infections",
+    "cautionPrecaution": "Do not use more than prescribed dose. Taking more medication will not improve your symptoms; rather they may cause poisoning or serious side-effects. If you suspect that you or anyone else who may have overdosed of Ciprofloxacin Tablet, please go to the emergency department of the closest hospital or nursing home. Bring a medicine box, container, or label with you to help doctors with necessary information.",
+    "contraindication": "Hypersensitivity to Ciprofloxacin Tablet is a contraindication. In addition, Ciprofloxacin Tablet should not be used if you have the following conditions:\n- Hypersensitivity\n- Muscle disorder\n- Tizanidine ",
+    "imageUrl": "http://tmd-dev.thamardaw.com/TMD000040_d06f80ad9224a5476e9f1515507dbe0725f98efb.jpg.jpg",
+    "description": "Antibiotic",
+    "netWeightInGram": 250,
+    "countryOfOrigin": {
+      "countryOfOriginId": 101,
+      "countryOfOrigin": "India",
+      "tmdNote": ""
+    },
+    "manufacturer": {
+      "manufacturerId": 203,
+      "manufacturer": "Acichem Labs",
+      "tmdNote": ""
+    },
+    "distributor": {
+      "distributorId": 301,
+      "distributor": "Acichem Labs",
+      "tmdNote": ""
+    },
+    "sellerClassification": {
+      "sellerClassificationId": 401,
+      "classification": "",
+      "tmdNote": ""
+    },
+    "fdaCategories": [
+      {
+        "categoryId": 504,
+        "category": "Antibiotic"
+      }
+    ],
+    "sideEffects": [
+      {
+        "sideEffectId": 620,
+        "sideEffect": "Headache"
+      },
+      {
+        "sideEffectId": 603,
+        "sideEffect": "Dizziness"
+      },
+      {
+        "sideEffectId": 621,
+        "sideEffect": "Fainting"
+      },
+      {
+        "sideEffectId": 622,
+        "sideEffect": "Fast or pounding heartbeat"
+      }
+    ],
+    "id": "59cdfb49ce0ddc6c70db4221"
+  },
+  {
+    "drugId": 7,
+    "brandName": "Oramol",
+    "genericName": "Paracetamol",
+    "atcCode": "",
+    "fdaDrcNo": "1234567890",
+    "form": "Tablet",
+    "strength": "500mg",
+    "uses": "Oramol Paracetamol Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms: \n- Fever\n- Periods pain\n- Headache\n- Cold\n- Toothache\n- Joint pain\n- Ear pain",
+    "cautionPrecaution": "Avoid using it if allergic to paracetamol.Do not take paracetamol if you consume alcoholic beverages every day",
+    "contraindication": "Hypersensitivity to Paracetamol Tablet is a contraindication. In addition, Paracetamol Tablet should not be used if you have the following conditions:\nHepatic impairment\nHypersensitivity ",
+    "imageUrl": "http://tmd-dev.thamardaw.com/TMD000041_807ec29fa6e9355be468bd5fd211712809e1acef.jpg.jpg",
+    "description": "Non steroidal anti inflammatory drugs",
+    "netWeightInGram": 500,
+    "countryOfOrigin": {
+      "countryOfOriginId": 101,
+      "countryOfOrigin": "India",
+      "tmdNote": ""
+    },
+    "manufacturer": {
+      "manufacturerId": 203,
+      "manufacturer": "Acichem Labs",
+      "tmdNote": ""
+    },
+    "distributor": {
+      "distributorId": 301,
+      "distributor": "Acichem Labs",
+      "tmdNote": ""
+    },
+    "sellerClassification": {
+      "sellerClassificationId": 401,
+      "classification": "",
+      "tmdNote": ""
+    },
+    "fdaCategories": [
+      {
+        "categoryId": 505,
+        "category": "Fever Reducer"
+      }
+    ],
+    "sideEffects": [
+      {
+        "sideEffectId": 623,
+        "sideEffect": "Feeling of sickness"
+      },
+      {
+        "sideEffectId": 624,
+        "sideEffect": "Skin reddening"
+      },
+      {
+        "sideEffectId": 625,
+        "sideEffect": "Allergic reactions"
+      },
+      {
+        "sideEffectId": 626,
+        "sideEffect": "Shortness of breath"
+      },
+      {
+        "sideEffectId": 627,
+        "sideEffect": "Swollen facial features"
+      },
+      {
+        "sideEffectId": 628,
+        "sideEffect": "Liver damage"
+      }
+    ],
+    "id": "59cdfbb6ce0ddc6c70db4222"
+  },
+  {
+    "drugId": 8,
+    "brandName": "Amnotac 150",
+    "genericName": "Ranitidine",
+    "atcCode": "",
+    "fdaDrcNo": "1234567890",
+    "form": "Tablet",
+    "strength": "150mg",
+    "uses": "Ranitidine Tablet is used for the treatment, control, prevention, & improvement of the following diseases, conditions and symptoms:\n- Benign duodenal ulcer\n- Gastric ulcer\n- Inflammation of the esophagus\n- Acid peptic disease",
+    "cautionPrecaution": "Do not take this medication if you are allergic to it. Pregnant or planning to get pregnant",
+    "contraindication": "Hypersensitivity to Ranitidine Tablet is a contraindication. In addition, Ranitidine Tablet should not be used if you have the following conditions:\nBreastfeeding\nHypersensitivity\nPorphyria",
+    "imageUrl": "http://tmd-dev.thamardaw.com/TMD000042_5518c34e234d36bf2511605816f021f29e065540.jpg.jpg",
+    "description": "Gastrointastinal",
+    "netWeightInGram": 150,
+    "countryOfOrigin": {
+      "countryOfOriginId": 101,
+      "countryOfOrigin": "India",
+      "tmdNote": ""
+    },
+    "manufacturer": {
+      "manufacturerId": 204,
+      "manufacturer": "Jackson Labs",
+      "tmdNote": ""
+    },
+    "distributor": {
+      "distributorId": 301,
+      "distributor": "Acichem Labs",
+      "tmdNote": ""
+    },
+    "sellerClassification": {
+      "sellerClassificationId": 401,
+      "classification": "",
+      "tmdNote": ""
+    },
+    "fdaCategories": [
+      {
+        "categoryId": 506,
+        "category": "Gastrointestinal"
+      }
+    ],
+    "sideEffects": [
+      {
+        "sideEffectId": 619,
+        "sideEffect": "Swelling of lips"
+      },
+      {
+        "sideEffectId": 610,
+        "sideEffect": "Diarrhea"
+      },
+      {
+        "sideEffectId": 620,
+        "sideEffect": "Headache"
+      },
+      {
+        "sideEffectId": 629,
+        "sideEffect": "Very Low Blood Pressure"
+      },
+      {
+        "sideEffectId": 630,
+        "sideEffect": "Chest pain"
+      },
+      {
+        "sideEffectId": 616,
+        "sideEffect": "Diarrhea"
+      }
+    ],
+    "id": "59cdfbe7ce0ddc6c70db4223"
+  }
+]
