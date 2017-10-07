@@ -29,7 +29,9 @@ module.exports = function(Druginsale) {
   );
 
   Druginsale.getDrugsInSale = function(ctx, cb) {
-    Druginsale.find({}, function (err, instance) {
+    Druginsale.find({
+      fields: { drug : false }
+    }, function (err, instance) {
         var response = instance;
         cb(null, response);
     });
