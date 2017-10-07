@@ -16,29 +16,40 @@ Make Sure Mongo Server Is Running
 
 
 
-To Customize token and middleware please check,
+```
+  To Customize token and middleware please check,
+
+  context function    /server/server.js     line 21
+
+  ctx <<<< is the context of current USER calling this API
+
+```
+
+----------------------------------------------------------------------------------------
 
 
-context function    /server/server.js     line 21
+```
 
-ctx <<<< is the context of current USER calling this API
+  DATA INSERT API ARE ALL GENERATED, I HAVE NOT CODED THEM YET
 
-
-
-
-To DETERMINE WHO OWN THIS DRUG IN SALE in data entry panel
-
-DATA INSERT API ARE ALL GENERATED, I HAVE NOT CODED THEM YET
+  So now cannot determine who own this DRUG IN SALE in data entry panel
 
 
 
 
+  but get MY DRUG IN SALE and GET MY ORDERS is queried via ctx
 
-BUT GET MY DRUG IN SALE and GET MY ORDERS is queried via ctx
+  since we do not have USER ID where (buyerUserId === 'SUDO DATA')
 
-SINCE WE DO NOT HAVE USER ID where (buyerUserId === 'SUDO DATA')
+  GET MY DRUG IN SALE AND GET MY ORDERS do not work on loopback
 
-GET MY DRUG IN SALE AND GET MY ORDERS Do NOT WORK here
+  You can check context remote methods at
+
+  /common/models/drug-in-sale.js
+  /common/models/drug-order.js
+
+
+```
 
 
 
