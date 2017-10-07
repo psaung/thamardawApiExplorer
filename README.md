@@ -10,6 +10,42 @@ Make Sure Mongo Server Is Running
 
 3. localhost:3000
 
+
+
+## NOTE
+
+
+
+To Customize token and middleware please check,
+
+
+context function    /server/server.js     line 21
+
+ctx <<<< is the context of current USER calling this API
+
+
+
+
+To DETERMINE WHO OWN THIS DRUG IN SALE in data entry panel
+
+DATA INSERT API ARE ALL GENERATED, I HAVE NOT CODED THEM YET
+
+
+
+
+
+BUT GET MY DRUG IN SALE and GET MY ORDERS is queried via ctx
+
+SINCE WE DO NOT HAVE USER ID where (buyerUserId === 'SUDO DATA')
+
+GET MY DRUG IN SALE AND GET MY ORDERS Do NOT WORK here
+
+
+
+
+
+HERE ARE DIFFERENCES
+
 ```
     EXAMPLE - Drug In Sale From Sudo API
 
@@ -57,32 +93,32 @@ Make Sure Mongo Server Is Running
   "drugsInSale": [
     {
       "id": "8sfns8qi18qdadvmMnvzxf",
-      "drugId": 1,   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+      "drugId": 1,   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
       "basePrice": 850,
       "packaging": "10x10's",
       "expireIn": "In 3 months",
       "isActive": true,
       "sellerUser": {
-        "sellerUserId": 135 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+        "sellerUserId": 135 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
       },
       "listingPriority": {
-        "listingPriorityId": 0, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+        "listingPriorityId": 0, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
         "value": 1,
         "description": "Package A"
       },
       "paymentTerms": {
-        "paymentTermId": 0,     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+        "paymentTermId": 0,     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
         "paymentTerm": "NET30",
         "description": "You can pay the order within 30 days after your order."
       },
       "discountForDrug": {
-        "discountForDrugId": 123, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+        "discountForDrugId": 123, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
         "discountPercentage": 2,
         "minimumQuantity": 10,
         "otherTerms": "NA"
       },
       "bonusForDrug": {
-        "bonusForDrugId": 123,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+        "bonusForDrugId": 123,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
         "bonusDescription": "You can get plus one everytime you purchase 10 drugs.",
         "minimumQuantity": 10,
         "bonusQuantity": 1,
@@ -181,20 +217,20 @@ Make Sure Mongo Server Is Running
         "noteForOrder": "My New Drug Order",
         "packageSize": "5g",
         "buyerUser": {
-          "buyerUserId": 136  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+          "buyerUserId": 136  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
         },
         "orderItems": [
           {
-            "drugOrderItemId": 123,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+            "drugOrderItemId": 123,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
             "drugInSale": {
-              "drugInSaleId": 123  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+              "drugInSaleId": 123  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
             },
             "quantity": 10
           },
           {
-            "drugOrderItemId": 124,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+            "drugOrderItemId": 124,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
             "drugInSale": {
-              "drugInSaleId": 124  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+              "drugInSaleId": 124  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
             },
             "quantity": 15
           }
@@ -263,7 +299,7 @@ Make Sure Mongo Server Is Running
 
     Drugs : [
       {
-        "drugId": 15, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+        "drugId": 15, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
         "brandName": "Cetzy 10",
         "genericName": "Cetirizine",
         "atcCode": "",
@@ -277,34 +313,34 @@ Make Sure Mongo Server Is Running
         "description": "Eosinophil infiltration",
         "netWeightInGram": 10,
         "countryOfOrigin": {
-            "countryOfOriginId": 101, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+            "countryOfOriginId": 101, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
             "countryOfOrigin": "India",
             "tmdNote": ""
         },
         "manufacturer": {
-            "manufacturerId": 205,    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+            "manufacturerId": 205,    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
             "manufacturer": "Jocund India",
             "tmdNote": ""
         },
         "distributor": {
-            "distributorId": 301,     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+            "distributorId": 301,     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
             "distributor": "Acichem Labs",
             "tmdNote": ""
         },
         "sellerClassification": {
-            "sellerClassificationId": 401, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+            "sellerClassificationId": 401, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
             "classification": "",
             "tmdNote": ""
         },
         "fdaCategories": [
             {
-                "categoryId": 513,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+                "categoryId": 513,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
                 "category": "Eosinophil infiltration"
             }
         ],
         "sideEffects": [
             {
-                "sideEffectId": 649,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
+                "sideEffectId": 649,  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL AS ( id : "sjf918yt1ifhh8190rhif" )
                 "sideEffect": "Please consult your physician or pharmacist or product package for this information."
             }
         ]
