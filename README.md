@@ -10,9 +10,8 @@ Make Sure Mongo Server Is Running
 
 3. localhost:3000
 
--------------------------------------------------------------------------------------------------------------------------
-
-    ##EXAMPLE - Drug In Sale From Sudo API
+```
+    EXAMPLE - Drug In Sale From Sudo API
 
     "drugsInSale": [
       {
@@ -50,13 +49,10 @@ Make Sure Mongo Server Is Running
         }
       }, { ... }
     ]
+```
 
-
--------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------
-
-
-  ##EXAMPLE - Drug In Sale Loop Back API
+```
+  EXAMPLE - Drug In Sale Loop Back API
 
   "drugsInSale": [
     {
@@ -94,12 +90,10 @@ Make Sure Mongo Server Is Running
       }
     }, { ... }
   ]
+```
 
--------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------
-
-
-  ##EXAMPLE - GET ORDERS FROM SUDO API
+```
+  EXAMPLE - GET ORDERS FROM SUDO API
 
   "myOrders": [
       {
@@ -170,11 +164,10 @@ Make Sure Mongo Server Is Running
               }
           ]
         }, { .... }]
+```
 
-
--------------------------------------------------------------------------------------------------------------------------
-
-      ##EXAMPLE -  GET ORDERS FROM LOOB BACK API
+```
+      EXAMPLE -  GET ORDERS FROM LOOB BACK API
 
       myOrders : [{
         "id": "59ce974326c7fa307adaf8a8" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DrugOrderId
@@ -210,11 +203,10 @@ Make Sure Mongo Server Is Running
 
       The Same Goes With Cash Collecting Entries
       Order State Entries
+```
 
-
--------------------------------------------------------------------------------------------------------------------------
-
-    ##EXAMPLE - GET DRUGS FROM SUDO API
+```
+    EXAMPLE - GET DRUGS FROM SUDO API
 
     Drugs : [{
         "drugId": 15,
@@ -264,10 +256,10 @@ Make Sure Mongo Server Is Running
         ]
     }, { .... }
     ]
+```
 
--------------------------------------------------------------------------------------------------------------------------
-
-    ##EXAMPLE - GET DRUGS FROM LOOP BACK API
+```
+    EXAMPLE - GET DRUGS FROM LOOP BACK API
 
     Drugs : [
       {
@@ -318,8 +310,7 @@ Make Sure Mongo Server Is Running
         ]
       }, { .... }
     ]
-
-
+```
 
 
 
