@@ -12,7 +12,7 @@ Make Sure Mongo Server Is Running
 
 -------------------------------------------------------------------------------------------------------------------------
 
-    EXAMPLE - Drug In Sale From Sudo API
+    ##EXAMPLE - Drug In Sale From Sudo API
 
     "drugsInSale": [
       {
@@ -48,14 +48,14 @@ Make Sure Mongo Server Is Running
           "bonusQuantity": 1,
           "otherTerms": "NA"
         }
-      }, {}
+      }, { ... }
     ]
 
 
 -------------------------------------------------------------------------------------------------------------------------
 
 
-  EXAMPLE - Loop Back API
+  ##EXAMPLE - Loop Back API
 
   "drugsInSale": [
     {
@@ -91,9 +91,8 @@ Make Sure Mongo Server Is Running
         "bonusQuantity": 1,
         "otherTerms": "NA"
       }
-    }, {}
+    }, { ... }
   ]
-
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -169,7 +168,7 @@ Make Sure Mongo Server Is Running
                   "quantity": 15
               }
           ]
-      }
+        }, { .... }]
 
 
 -------------------------------------------------------------------------------------------------------------------------
@@ -178,8 +177,7 @@ Make Sure Mongo Server Is Running
       EXAMPLE - LOOB BACK API
 
 
-
-      {
+      myOrders : [{
         "id": "59ce974326c7fa307adaf8a8" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< DrugOrderId
         "drugOrderId": "1",  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FROM SUDO DATA
         "orderDateTime": "1970-01-18T10:47:09.740Z",
@@ -209,7 +207,7 @@ Make Sure Mongo Server Is Running
             "quantity": 15
           }
         ]
-      }
+      }, { .... }]
 
       The Same Goes With Cash Collecting Entries
       Order State Entries
@@ -219,7 +217,7 @@ Make Sure Mongo Server Is Running
 
     EXAMPLE - SUDO API
 
-    {
+    Drugs : [{
         "drugId": 15,
         "brandName": "Cetzy 10",
         "genericName": "Cetirizine",
@@ -265,13 +263,15 @@ Make Sure Mongo Server Is Running
                 "sideEffect": "Please consult your physician or pharmacist or product package for this information."
             }
         ]
-    }
+    }, { .... }
+    ]
 
 -------------------------------------------------------------------------------------------------------------------------
 
     EXAMPLE - API API
 
-    {
+    Drugs : [
+      {
         "drugId": 15, <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HAVE TO CHANGE HERE IF YOU WANT TO USE DATA INSERTED FROM DATA ENTRY PANEL ( id : "sjf918yt1ifhh8190rhif" )
         "brandName": "Cetzy 10",
         "genericName": "Cetirizine",
@@ -317,7 +317,8 @@ Make Sure Mongo Server Is Running
                 "sideEffect": "Please consult your physician or pharmacist or product package for this information."
             }
         ]
-    }
+      }, { .... }
+    ]
 
 
 
