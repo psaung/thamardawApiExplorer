@@ -36,6 +36,9 @@
     },
     "buildingName": {
       "type": "string"
+    },
+    "fullAddress" : {
+      "type": "string"
     }
   },
   "validations": [],
