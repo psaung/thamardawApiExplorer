@@ -15,6 +15,9 @@
     },
     "sellerCompanyId"  : {
       "type" : "string"
+    },
+    "sellerCompany"  : {
+      "type" : "object"
     }
   },
   "validations": [],
