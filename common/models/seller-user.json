@@ -7,26 +7,18 @@
     "validateUpsert": true
   },
   "properties": {
-    "totalActiveDrug": {
-      "type": "number",
-      "required": true
+    "sellerUserId" : {
+      "type" : "string"
     },
-    "lastTimeMakeSale": {
-      "type": "date"
+    "tmdUserId" : {
+      "type" : "string"
     },
-    "address": {
-      "type": "object"
+    "sellerCompanyId"  : {
+      "type" : "string"
     }
   },
   "validations": [],
   "relations": {},
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "DENY"
-    }
-  ],
+  "acls": [],
   "methods": {}
 }

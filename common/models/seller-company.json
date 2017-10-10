@@ -7,6 +7,9 @@
     "validateUpsert": true
   },
   "properties": {
+    "sellerCompanyId" : {
+      "type" : "string"
+    },
     "companyName": {
       "type": "string",
       "required": true
@@ -26,14 +29,6 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "DENY"
-    }
-  ],
-
+  "acls": [],
   "methods": {}
 }
