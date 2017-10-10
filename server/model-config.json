@@ -98,5 +98,9 @@
   "SellerUser": {
     "dataSource": "db",
     "public": true
+  },
+  "SellerCompany": {
+    "dataSource": "db",
+    "public": true
   }
 }

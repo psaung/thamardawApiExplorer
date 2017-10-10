@@ -19,6 +19,25 @@ module.exports = function(Druginsale) {
   Druginsale.disableRemoteMethodByName('upsertWithWhere', true);
   Druginsale.disableRemoteMethodByName("prototype.patchAttributes", false);
 
+  // Druginsale.remoteMethod (
+  //     'saveMyDrugInSale',
+  //     {
+  //       http    : { path: '/saveMyDrugInSale', verb: 'post'},
+  //       accepts : { arg: "query", type: 'string' },
+  //       returns : { arg: "DrugsInSale", type: 'array' }
+  //     }
+  // );
+  //
+  // Druginsale.saveMyDrugInSale = function(ctx, cb) {
+  //   Druginsale.find({
+  //     fields: { drug : false }
+  //   }, function (err, instance) {
+  //       var response = instance;
+  //       cb(null, response);
+  //   });
+  // }
+
+
   Druginsale.remoteMethod (
       'getDrugsInSale',
       {

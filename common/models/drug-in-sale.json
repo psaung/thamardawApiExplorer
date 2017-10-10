@@ -10,9 +10,22 @@
     "drugInSaleId": {
       "type": "string"
     },
-    "drugId" : {
-      "type" : "string"
+    "drugId": {
+      "type": "string"
     },
+    "sellerCompanyId": {
+      "type": "string"
+    },
+    "paymentTermId": {
+      "type": "string"
+    },
+    "discountForDrugId": {
+      "type": "string"
+    },
+    "bonusForDrugId": {
+      "type": "string"
+    },
+
     "drug": {
       "type": "object"
     },
@@ -51,7 +64,5 @@
       "permission": "DENY"
     }
   ],
-  "methods": {
-
-  }
+  "methods": {}
 }
