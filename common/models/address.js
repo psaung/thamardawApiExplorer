@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = function(Address) {
-  Address.disableRemoteMethodByName('replaceOrCreate', true);
-  Address.disableRemoteMethodByName('patchOrCreate', true);
-  Address.disableRemoteMethodByName('exists', true);
+  // Address.disableRemoteMethodByName('patchOrCreate', true);
+  // Address.disableRemoteMethodByName('replaceOrCreate', true);
   // Address.disableRemoteMethodByName('findById', true);
+  // Address.disableRemoteMethodByName('destroyById', true);
+  Address.disableRemoteMethodByName('exists', true);
   Address.disableRemoteMethodByName('findOne', true);
-  Address.disableRemoteMethodByName('destroyById', true);
   Address.disableRemoteMethodByName('count', true)
   Address.disableRemoteMethodByName('replaceById', true)
   Address.disableRemoteMethodByName('createChangeStream', true)

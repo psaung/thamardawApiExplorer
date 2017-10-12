@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = function(Distributor) {
-  Distributor.disableRemoteMethodByName('replaceOrCreate', true);
-  Distributor.disableRemoteMethodByName('patchOrCreate', true);
-  Distributor.disableRemoteMethodByName('exists', true);
+  // Distributor.disableRemoteMethodByName('patchOrCreate', true);
+  // Distributor.disableRemoteMethodByName('replaceOrCreate', true);
   // Distributor.disableRemoteMethodByName('findById', true);
+  // Distributor.disableRemoteMethodByName('destroyById', true);
+  Distributor.disableRemoteMethodByName('exists', true);
   Distributor.disableRemoteMethodByName('findOne', true);
-  Distributor.disableRemoteMethodByName('destroyById', true);
   Distributor.disableRemoteMethodByName('count', true)
   Distributor.disableRemoteMethodByName('replaceById', true)
   Distributor.disableRemoteMethodByName('createChangeStream', true)

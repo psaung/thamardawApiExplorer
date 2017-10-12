@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = function(Paymentterm) {
-  Paymentterm.disableRemoteMethodByName('replaceOrCreate', true);
-  Paymentterm.disableRemoteMethodByName('patchOrCreate', true);
   Paymentterm.disableRemoteMethodByName('exists', true);
+  // Paymentterm.disableRemoteMethodByName('patchOrCreate', true);
+  // Paymentterm.disableRemoteMethodByName('replaceOrCreate', true);
   // Paymentterm.disableRemoteMethodByName('findById', true);
+  // Paymentterm.disableRemoteMethodByName('destroyById', true);
   Paymentterm.disableRemoteMethodByName('findOne', true);
-  Paymentterm.disableRemoteMethodByName('destroyById', true);
   Paymentterm.disableRemoteMethodByName('count', true)
   Paymentterm.disableRemoteMethodByName('replaceById', true)
   Paymentterm.disableRemoteMethodByName('createChangeStream', true)

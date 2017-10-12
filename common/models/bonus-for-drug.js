@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = function(Bonusfordrug) {
-  Bonusfordrug.disableRemoteMethodByName('replaceOrCreate', true);
-  Bonusfordrug.disableRemoteMethodByName('patchOrCreate', true);
-  Bonusfordrug.disableRemoteMethodByName('exists', true);
+  // Bonusfordrug.disableRemoteMethodByName('patchOrCreate', true);
+  // Bonusfordrug.disableRemoteMethodByName('replaceOrCreate', true);
   // Bonusfordrug.disableRemoteMethodByName('findById', true);
+  // Bonusfordrug.disableRemoteMethodByName('destroyById', true);
+  Bonusfordrug.disableRemoteMethodByName('exists', true);
   Bonusfordrug.disableRemoteMethodByName('findOne', true);
-  Bonusfordrug.disableRemoteMethodByName('destroyById', true);
   Bonusfordrug.disableRemoteMethodByName('count', true)
   Bonusfordrug.disableRemoteMethodByName('replaceById', true)
   Bonusfordrug.disableRemoteMethodByName('createChangeStream', true)

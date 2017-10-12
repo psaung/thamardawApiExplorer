@@ -2,12 +2,12 @@
 
 module.exports = function(Fdacategory) {
 
-  Fdacategory.disableRemoteMethodByName('replaceOrCreate', true);
-  Fdacategory.disableRemoteMethodByName('patchOrCreate', true);
-  Fdacategory.disableRemoteMethodByName('exists', true);
+  // Fdacategory.disableRemoteMethodByName('replaceOrCreate', true);
+  // Fdacategory.disableRemoteMethodByName('patchOrCreate', true);
   // Fdacategory.disableRemoteMethodByName('findById', true);
+  // Fdacategory.disableRemoteMethodByName('destroyById', true);
+  Fdacategory.disableRemoteMethodByName('exists', true);
   Fdacategory.disableRemoteMethodByName('findOne', true);
-  Fdacategory.disableRemoteMethodByName('destroyById', true);
   Fdacategory.disableRemoteMethodByName('count', true)
   Fdacategory.disableRemoteMethodByName('replaceById', true)
   Fdacategory.disableRemoteMethodByName('createChangeStream', true)

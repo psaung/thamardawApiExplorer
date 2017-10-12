@@ -4,16 +4,16 @@ var LoopBackContext   = require('loopback-context');
 
 module.exports = function(Druginsale) {
 
-  Druginsale.disableRemoteMethodByName('replaceOrCreate', true);
-  Druginsale.disableRemoteMethodByName('patchOrCreate', true);
+  // Druginsale.disableRemoteMethodByName('replaceOrCreate', true);
+  // Druginsale.disableRemoteMethodByName('findById', true);
+  // Druginsale.disableRemoteMethodByName('destroyById', true);
+  // Druginsale.disableRemoteMethodByName("updateAll", true);
+  // Druginsale.disableRemoteMethodByName('patchOrCreate', true);
   Druginsale.disableRemoteMethodByName('exists', true);
-  Druginsale.disableRemoteMethodByName('findById', true);
   Druginsale.disableRemoteMethodByName('findOne', true);
-  Druginsale.disableRemoteMethodByName('destroyById', true);
   Druginsale.disableRemoteMethodByName('count', true)
   Druginsale.disableRemoteMethodByName('replaceById', true)
   Druginsale.disableRemoteMethodByName('createChangeStream', true)
-  // Druginsale.disableRemoteMethodByName("updateAll", true);
   Druginsale.disableRemoteMethodByName("replaceOrCreate", false);
   Druginsale.disableRemoteMethodByName('replaceById', true);
   Druginsale.disableRemoteMethodByName('upsertWithWhere', true);

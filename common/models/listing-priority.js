@@ -2,12 +2,12 @@
 
 module.exports = function(Listingpriority) {
 
-  Listingpriority.disableRemoteMethodByName('replaceOrCreate', true);
-  Listingpriority.disableRemoteMethodByName('patchOrCreate', true);
   Listingpriority.disableRemoteMethodByName('exists', true);
+  // Listingpriority.disableRemoteMethodByName('replaceOrCreate', true);
+  // Listingpriority.disableRemoteMethodByName('patchOrCreate', true);
   // Listingpriority.disableRemoteMethodByName('findById', true);
+  // Listingpriority.disableRemoteMethodByName('destroyById', true);
   Listingpriority.disableRemoteMethodByName('findOne', true);
-  Listingpriority.disableRemoteMethodByName('destroyById', true);
   Listingpriority.disableRemoteMethodByName('count', true)
   Listingpriority.disableRemoteMethodByName('replaceById', true)
   Listingpriority.disableRemoteMethodByName('createChangeStream', true)

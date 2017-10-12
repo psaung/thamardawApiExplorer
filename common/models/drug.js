@@ -3,12 +3,12 @@
 module.exports = function(Drug) {
 
 
-  Drug.disableRemoteMethodByName('replaceOrCreate', true);
-  Drug.disableRemoteMethodByName('patchOrCreate', true);
-  Drug.disableRemoteMethodByName('exists', true);
+  // Drug.disableRemoteMethodByName('replaceOrCreate', true);
+  // Drug.disableRemoteMethodByName('patchOrCreate', true);
   // Drug.disableRemoteMethodByName('findById', true);
+  // Drug.disableRemoteMethodByName('destroyById', true);
+  Drug.disableRemoteMethodByName('exists', true);
   Drug.disableRemoteMethodByName('findOne', true);
-  Drug.disableRemoteMethodByName('destroyById', true);
   Drug.disableRemoteMethodByName('count', true)
   Drug.disableRemoteMethodByName('replaceById', true)
   Drug.disableRemoteMethodByName('createChangeStream', true)

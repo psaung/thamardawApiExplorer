@@ -3,16 +3,16 @@
 module.exports = function(Drugorder) {
 
 
-  Drugorder.disableRemoteMethodByName('replaceOrCreate', true);
-  Drugorder.disableRemoteMethodByName('patchOrCreate', true);
-  Drugorder.disableRemoteMethodByName('exists', true);
+  // Drugorder.disableRemoteMethodByName('replaceOrCreate', true);
+  // Drugorder.disableRemoteMethodByName('patchOrCreate', true);
   // Drugorder.disableRemoteMethodByName('findById', true);
+  // Drugorder.disableRemoteMethodByName("updateAll", true);
+  Drugorder.disableRemoteMethodByName('exists', true);
   Drugorder.disableRemoteMethodByName('findOne', true);
   Drugorder.disableRemoteMethodByName('destroyById', true);
   Drugorder.disableRemoteMethodByName('count', true)
   Drugorder.disableRemoteMethodByName('replaceById', true)
   Drugorder.disableRemoteMethodByName('createChangeStream', true)
-  // Drugorder.disableRemoteMethodByName("updateAll", true);
   Drugorder.disableRemoteMethodByName("replaceOrCreate", false);
   Drugorder.disableRemoteMethodByName('replaceById', true);
   Drugorder.disableRemoteMethodByName('upsertWithWhere', true);

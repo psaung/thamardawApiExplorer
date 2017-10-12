@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = function(Sellerclassification) {
-  Sellerclassification.disableRemoteMethodByName('replaceOrCreate', true);
-  Sellerclassification.disableRemoteMethodByName('patchOrCreate', true);
   Sellerclassification.disableRemoteMethodByName('exists', true);
+  // Sellerclassification.disableRemoteMethodByName('replaceOrCreate', true);
+  // Sellerclassification.disableRemoteMethodByName('patchOrCreate', true);
   // Sellerclassification.disableRemoteMethodByName('findById', true);
+  // Sellerclassification.disableRemoteMethodByName('destroyById', true);
   Sellerclassification.disableRemoteMethodByName('findOne', true);
-  Sellerclassification.disableRemoteMethodByName('destroyById', true);
   Sellerclassification.disableRemoteMethodByName('count', true)
   Sellerclassification.disableRemoteMethodByName('replaceById', true)
   Sellerclassification.disableRemoteMethodByName('createChangeStream', true)
