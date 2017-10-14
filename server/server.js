@@ -24,14 +24,21 @@ app.remotes().phases.addBefore('invoke', '**').use(function(ctx, next) {
   User.findById(ctx.req.accessToken.userId, function(err, user) {
     if (err) return next(err);
     if (user) {
-      ctx.req.body.currentUser = user;
       if(user.isTmdEmployee || user.isSeller) {
         const SellerUser = app.models.SellerUser;
         SellerUser.findOne({tmdUserId: user.id }, function(err, sellerUser){
-          ctx.req.body.currentUser = sellerUser;
+          ctx.req.body.sellerUser = sellerUser;
           next();
         });
-      } else {
+      } else if(user.isBuyer) {
+        const BuyerUser = app.models.BuyerUser;
+        BuyerUser.findOne({tmdUserId: user.id }, function(err, buyerUser){
+          ctx.req.body.buyerUser = buyerUser;
+          next();
+        });
+      }
+      else {
+        ctx.req.body.currentUser = user;
         next();
       }
     }

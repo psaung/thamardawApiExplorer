@@ -27,9 +27,25 @@ module.exports = function(Drug) {
         returns : { arg: "Drugs", type: 'array' }
       }
   );
-
   Drug.getDrugs = function(ctx, cb) {
     Drug.find({}, function (err, instance) {
+        var response = instance;
+        cb(null, response);
+    });
+  }
+
+
+  Drug.remoteMethod (
+      'saveDrugs',
+      {
+        http    : { path: '/saveDrugs', verb: 'post'},
+        accepts : { arg: 'data', type: 'object', http: { source: 'body' }},
+        returns : { arg: 'data', type: 'object', http: { source: 'body' }}
+      }
+  );
+  Drug.saveDrugs = function(ctx, cb) {
+    delete ctx['sellerUser'];
+    Drug.create(ctx, function (err, instance) {
         var response = instance;
         cb(null, response);
     });

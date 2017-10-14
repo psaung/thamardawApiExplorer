@@ -30,10 +30,8 @@ module.exports = function(Druginsale) {
 
   Druginsale.saveMyDrugInSale = function(ctx, cb) {
     var ctxDrugInSale = ctx;
-    ctxDrugInSale.sellerCompanyId  = ctx.currentUser.sellerCompanyId;
-    ctxDrugInSale.sellerUser       = ctx.currentUser;
-    ctxDrugInSale.currentUser      = undefined;
-
+    delete ctxDrugInSale.drug['sellerUser'];
+    ctxDrugInSale.sellerCompanyId = ctx.sellerUser.sellerCompanyId;
     Druginsale.create(ctxDrugInSale, function (err, instance) {
         var response = instance;
         cb(null, response);
