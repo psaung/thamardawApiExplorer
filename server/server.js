@@ -18,17 +18,25 @@ app.start = function() {
   });
 };
 
-app.remotes().phases
-.addBefore('invoke', '**')
-  .use(function(ctx, next) {
-    if (!ctx.req.accessToken) return next();
-    const User = app.models.User;
-    User.findById(ctx.req.accessToken.userId, function(err, user) {
-      if (err) return next(err);
-      ctx.args.currentUser = user;
-      next();
-    });
+app.remotes().phases.addBefore('invoke', '**').use(function(ctx, next) {
+  if (!ctx.req.accessToken) return next();
+  const User = app.models.User;
+  User.findById(ctx.req.accessToken.userId, function(err, user) {
+    if (err) return next(err);
+    if (user) {
+      ctx.req.body.currentUser = user;
+      if(user.isTmdEmployee || user.isSeller) {
+        const SellerUser = app.models.SellerUser;
+        SellerUser.findOne({tmdUserId: user.id }, function(err, sellerUser){
+          ctx.req.body.currentUser = sellerUser;
+          next();
+        });
+      } else {
+        next();
+      }
+    }
   });
+});
 
 
   app.remotes().after('**', function (ctx, next) {

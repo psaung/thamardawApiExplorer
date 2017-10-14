@@ -24,14 +24,14 @@ module.exports = function(Drugorder) {
     'getMyOrders',
     {
       http  : { path: '/getMyOrders', verb: 'post'},
-      accepts : { arg: "currentUser", type: 'object' },
-      returns : { arg: 'myOrders', type: 'string'}
+      accepts : { arg: 'data',      type: 'object', http: { source: 'body' }},
+      returns : { arg: 'MyOrders',  type: 'object', http: { source: 'body' }}
     }
   );
 
   Drugorder.getMyOrders = function(ctx, cb) {
     Drugorder.find({
-      where: { 'buyerUser.buyerUserId': ctx.id }
+      where: { 'buyerUser.buyerUserId': ctx.currentUser }
     }, function (err, instance) {
         var response = instance;
         cb(null, response);
