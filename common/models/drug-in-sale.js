@@ -30,7 +30,7 @@ module.exports = function(Druginsale) {
 
   Druginsale.saveMyDrugInSale = function(ctx, cb) {
     var ctxDrugInSale = ctx;
-    delete ctxDrugInSale.drug['sellerUser'];
+    // delete ctxDrugInSale.drug['sellerUser'];
     ctxDrugInSale.sellerCompanyId = ctx.sellerUser.sellerCompanyId;
     Druginsale.create(ctxDrugInSale, function (err, instance) {
         var response = instance;
@@ -64,13 +64,13 @@ module.exports = function(Druginsale) {
       {
         http    : { path: '/getMyDrugsInSale', verb: 'post'},
         accepts : { arg: 'data', type: 'object', http: { source: 'body' }},
-        returns : { arg: 'MyDrugsInSale', type: 'object', http: { source: 'body' }}
+        returns : { arg: 'MyDrugInSale', type: 'object', http: { source: 'body' }}
       }
   );
 
   Druginsale.getMyDrugsInSale = function(ctx, cb) {
-    Druginsale.find({
-      where: { 'sellerUser.sellerCompanyId': ctx.currentUser.sellerCompanyId }
+    console.log(ctx)
+    Druginsale.find({ 'sellerCompanyId': ctx.sellerUser.sellerCompanyId
     }, function (err, instance) {
         var response = instance;
         cb(null, response);
