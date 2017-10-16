@@ -18,39 +18,6 @@ app.start = function() {
   });
 };
 
-app.remotes().phases.addBefore('invoke', '**').use(function(ctx, next) {
-  if (!ctx.req.accessToken) return next();
-  const User = app.models.User;
-  User.findById(ctx.req.accessToken.userId, function(err, user) {
-    if (err) return next(err);
-    if (user) {
-      if(user.isTmdEmployee || user.isSeller) {
-        const SellerUser = app.models.SellerUser;
-        SellerUser.findOne({tmdUserId: user.id }, function(err, sellerUser){
-          ctx.req.body.sellerUser = sellerUser;
-          next();
-        });
-      } else if(user.isBuyer) {
-        const BuyerUser = app.models.BuyerUser;
-        BuyerUser.findOne({tmdUserId: user.id }, function(err, buyerUser){
-          ctx.req.body.buyerUser = buyerUser;
-          next();
-        });
-      }
-      else {
-        ctx.req.body.currentUser = user;
-        next();
-      }
-    }
-  });
-});
-
-
-  app.remotes().after('**', function (ctx, next) {
-    next();
-  });
-
-
 
 boot(app, __dirname, function(err) {
   if (err) throw err;

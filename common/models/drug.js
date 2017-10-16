@@ -1,5 +1,5 @@
 'use strict';
-
+var app = require('../../server/server');
 module.exports = function(Drug) {
 
 
@@ -17,6 +17,37 @@ module.exports = function(Drug) {
   Drug.disableRemoteMethodByName('replaceById', true);
   Drug.disableRemoteMethodByName('upsertWithWhere', true);
   Drug.disableRemoteMethodByName("prototype.patchAttributes", false);
+
+  // Drug.beforeRemote('**', function(ctx, next) {
+  //   if (!ctx.req.accessToken) return next();
+  //   const User = app.models.User;
+  //   User.findById(ctx.req.accessToken.userId, function(err, user) {
+  //     if (err) return next(err);
+  //     if (user) {
+  //       if(user.isTmdEmployee || user.isSeller) {
+  //         const SellerUser = app.models.SellerUser;
+  //         SellerUser.findOne({tmdUserId: user.id }, function(err, sellerUser){
+  //           ctx.req.body.sellerUser = sellerUser;
+  //           // next();
+  //         });
+  //       } else if(user.isBuyer) {
+  //         const BuyerUser = app.models.BuyerUser;
+  //         BuyerUser.findOne({tmdUserId: user.id }, function(err, buyerUser){
+  //           ctx.req.body.buyerUser = buyerUser;
+  //           // next();
+  //         });
+  //       } else {
+  //         ctx.req.body.currentUser = user;
+  //         // next();
+  //       }
+  //     }
+  //   });
+  // });
+  //
+  //
+  // Drug.afterRemote('**', function (ctx, next) {
+  //   next();
+  // });
 
 
   Drug.remoteMethod (
@@ -44,7 +75,6 @@ module.exports = function(Drug) {
       }
   );
   Drug.saveDrugs = function(ctx, cb) {
-    delete ctx['sellerUser'];
     Drug.create(ctx, function (err, instance) {
         var response = instance;
         cb(null, response);
