@@ -1,10 +1,12 @@
 'use strict';
-var app = require('../../server/server');
-module.exports = function(Drug) {
 
+const async = require('async');
+
+module.exports = function(Drug) {
+  var app = require('../../server/server');
 
   // Drug.disableRemoteMethodByName('replaceOrCreate', true);
-  // Drug.disableRemoteMethodByName('patchOrCreate', true);
+  Drug.disableRemoteMethodByName('patchOrCreate', true);
   // Drug.disableRemoteMethodByName('findById', true);
   // Drug.disableRemoteMethodByName('destroyById', true);
   Drug.disableRemoteMethodByName('exists', true);
@@ -18,37 +20,6 @@ module.exports = function(Drug) {
   Drug.disableRemoteMethodByName('upsertWithWhere', true);
   Drug.disableRemoteMethodByName("prototype.patchAttributes", false);
 
-  // Drug.beforeRemote('**', function(ctx, next) {
-  //   if (!ctx.req.accessToken) return next();
-  //   const User = app.models.User;
-  //   User.findById(ctx.req.accessToken.userId, function(err, user) {
-  //     if (err) return next(err);
-  //     if (user) {
-  //       if(user.isTmdEmployee || user.isSeller) {
-  //         const SellerUser = app.models.SellerUser;
-  //         SellerUser.findOne({tmdUserId: user.id }, function(err, sellerUser){
-  //           ctx.req.body.sellerUser = sellerUser;
-  //           // next();
-  //         });
-  //       } else if(user.isBuyer) {
-  //         const BuyerUser = app.models.BuyerUser;
-  //         BuyerUser.findOne({tmdUserId: user.id }, function(err, buyerUser){
-  //           ctx.req.body.buyerUser = buyerUser;
-  //           // next();
-  //         });
-  //       } else {
-  //         ctx.req.body.currentUser = user;
-  //         // next();
-  //       }
-  //     }
-  //   });
-  // });
-  //
-  //
-  // Drug.afterRemote('**', function (ctx, next) {
-  //   next();
-  // });
-
 
   Drug.remoteMethod (
       'getDrugs',
@@ -58,6 +29,7 @@ module.exports = function(Drug) {
         returns : { arg: "Drugs", type: 'array' }
       }
   );
+
   Drug.getDrugs = function(ctx, cb) {
     Drug.find({}, function (err, instance) {
         var response = instance;
@@ -74,13 +46,83 @@ module.exports = function(Drug) {
         returns : { arg: 'data', type: 'object', http: { source: 'body' }}
       }
   );
+
+  Drug.remoteMethod(
+    'drugsMeta',
+    {
+      description: 'Get meta informations for Drug tables',
+      http : { path: '/DrugMetas', verb: 'get'},
+      accepts : { arg: 'query', type: 'string' },
+      returns: [
+        { 
+          arg: 'countryOfOrigins',
+          type: 'array',
+          root: true,
+        },
+        {
+          arg: 'manufactures',
+          type: 'array',
+          root: true,
+        },
+        {
+          arg: 'distributors',
+          type: 'array',
+          root: true,
+        },
+        {
+          arg: 'sellerClassifications',
+          type: 'array',
+          root: true,
+        },
+        {
+          arg: 'fdaCategories',
+          type: 'array',
+          root: true,
+        },
+        {
+          arg: 'sideEffects',
+          type: 'array',
+          root: true,
+        }
+      ]
+    }
+  );
+
+  Drug.drugsMeta = function(ctx, cb) {
+    const CountryOfOrigins = app.models.CountryOfOrigin;
+    const Manufacturer = app.models.Manufacturer;
+    const Distributor = app.models.Distributor;
+    const SellerClassification = app.models.SellerClassification;
+    const FdaCategory = app.models.FdaCategory;
+    const SideEffect = app.models.SideEffect;
+
+    const getCountries = cb => CountryOfOrigins.find({}, (err, result) => cb(err, result));
+    const manufacturers = cb => Manufacturer.find({}, (err, result) => cb(err, result));
+    const distributors = cb => Distributor.find({}, (err, result) => cb(err, result));
+    const sellerClassifications = cb => SellerClassification.find({}, (err, result) => cb(err, result));
+    const fdaCategories = cb => FdaCategory.find({}, (err, result) => cb(err, result));
+    const sideEffects = cb => SideEffect.find({}, (err, result) => cb(err, result));
+   
+    const resources = {
+      countryOfOrigins: getCountries,
+      manufacturers: manufacturers,
+      distributors: distributors,
+      sellerClassfications: sellerClassifications,
+      fdaCategories: fdaCategories,
+      sideEffects: sideEffects,
+    };
+
+    async.parallel(resources, function (err, result) {
+      if(err) return next(err);
+      cb(null, result);
+    });
+  };
+
   Drug.saveDrugs = function(ctx, cb) {
+    delete ctx['sellerUser'];
     Drug.create(ctx, function (err, instance) {
         var response = instance;
         cb(null, response);
     });
   }
-
-
-
 };
