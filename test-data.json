@@ -1,0 +1,31 @@
+{
+  "brandName": "string", 
+  "genericName": "string",
+  "atcCode": "string",
+  "fdaDrcNo": "string",
+  "form": "string",
+  "strength": "string",
+  "uses": "string",
+  "cautionPrecaution": "string",
+  "contraindication": "string",
+  "imageUrl": "string",
+  "description": "string",
+  "netWeightInGram": 0,
+  "countryOfOrigin": {},
+  "manufacturer": {},
+  "distributor": {},
+  "sellerClassification": {},
+  "fdaCategories": [
+    {}
+  ],
+  "sideEffects": [
+    {}
+  ],
+  "basePrice": 0,
+  "packaging": "string",
+  "isActive": true,
+  "listingPriority": {},
+  "paymentTerm": "paymentTerm",
+  "discountForDrug": "",
+  "bonusForDrug": {}
+}
