@@ -2,7 +2,6 @@
 var app = require('../../server/server');
 const async = require('async');
 
-
 /*
  * Check the post request params validations of SaveDrugAndSale data.
  */
@@ -229,9 +228,13 @@ module.exports = function(Drug) {
     'saveDrugAndSales',
     {
       //accepts: checkAccepts,
-      accepts: {
-        arg: 'data', type: 'object', required: true, http: { source: 'body' } 
-      },
+      accepts: [ 
+      {
+        arg: 'data', type: 'object', required: true, http: { source: 'body' } },
+      {
+        arg: 'accessToken', type: 'any', http: ctx => ctx.req.accessToken 
+      }
+      ],
       returns: [
         {
           arg: 'drug',
@@ -248,7 +251,7 @@ module.exports = function(Drug) {
     }
   );
 
-  Drug.saveDrugAndSales = function(ctx, cb) {
+  Drug.saveDrugAndSales = function(ctx, user, cb) {
     const DrugInSale = app.models.DrugInSale; 
     const User = app.models.User;
     const result = checkResourceParams(ctx);
@@ -287,21 +290,24 @@ module.exports = function(Drug) {
       paymentTerm: ctx.paymentTerm,
       discountForDrug: ctx.discountForDrug,
       bonusForDrug: ctx.bonusForDrug,
+      sellerUser: user,
     };
-
+    
     const createDrugs = callback => Drug.create(drugParam, callback);
     const createDrugInSales = (drug, callback) => {
       drugInSale.drug = drug;
-      DrugInSale.create(drugInSale, callback);
+      return DrugInSale.create(drugInSale, callback);
     }
     async.waterfall([
         createDrugs,
         createDrugInSales,
-        function(err, result) {
-          if(err) cb(null, result);
-          cb(null, result);
-        },
-    ]);
+    ], function(error, result) {
+        if(error) cb(error, {});
+        cb(null, {
+          drug: result.drug,
+          drugInSale: result
+        });
+    });
 
   //   User.findById(ctx.req.accessToken.userId, function(err, user) {
   //     if (err) return next(err);
